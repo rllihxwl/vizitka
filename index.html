@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD — Дизайн и верстка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Первый экран -->
+    <header class="first-screen" id="home">
+        <div class="container first-screen-container">
+            <a class="logo" href="#home">WD</a>
+
+            <nav class="menu">
+                <a class="current" href="#home">ГЛАВНАЯ</a>
+                <a href="#about">ОБ АВТОРЕ</a>
+                <a href="#projects">РАБОТЫ</a>
+                <a href="#video">ПРОЦЕСС</a>
+                <a href="#contacts">КОНТАКТЫ</a>
+            </nav>
+
+            <img class="first-picture" src="assets/laptop.png" width="357" height="234" alt="Ноутбук с кодом">
+
+            <div class="first-text">
+                <h1>Дизайн и верстка</h1>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <a class="button write-button" href="#contacts">НАПИСАТЬ МНЕ</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Обо мне -->
+        <section class="about" id="about">
+            <div class="section-text">
+                <h2>Обо мне</h2>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            </div>
+        </section>
+
+        <!-- Цифры -->
+        <section class="numbers">
+            <div class="numbers-content">
+                <img src="assets/project-stat.png" width="141" height="50" alt="40+ проектов">
+                <img src="assets/project-stat.png" width="141" height="50" alt="40+ проектов">
+                <img src="assets/project-stat.png" width="141" height="50" alt="40+ проектов">
+                <img src="assets/project-stat.png" width="141" height="50" alt="40+ проектов">
+                <img src="assets/project-stat.png" width="141" height="50" alt="40+ проектов">
+                <img src="assets/project-stat.png" width="141" height="50" alt="40+ проектов">
+            </div>
+        </section>
+
+        <!-- Мои навыки -->
+        <section class="skills">
+            <div class="container skills-content">
+                <div class="skills-left">
+                    <h2>Мои навыки</h2>
+
+                    <div class="skill-item">
+                        <p>Adobe Photoshop</p>
+                        <div class="skill-line"><div class="skill-blue"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Adobe Photoshop</p>
+                        <div class="skill-line"><div class="skill-blue"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <p>Adobe Photoshop</p>
+                        <div class="skill-line"><div class="skill-blue"></div></div>
+                    </div>
+                </div>
+
+                <img class="portrait" src="assets/portrait.png" width="555" height="450" alt="Фотография автора">
+            </div>
+        </section>
+
+        <!-- Как я работаю -->
+        <section class="video" id="video">
+            <div class="section-text">
+                <h2>Как я работаю</h2>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            </div>
+
+            <img class="video-image" src="assets/video.png" width="1110" height="600" alt="Кадр с программным кодом и кнопкой воспроизведения">
+        </section>
+
+        <!-- Проекты -->
+        <section class="projects" id="projects">
+            <div class="project"><img src="assets/project-a.png" alt="Проект 1"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-b.png" alt="Проект 2"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-a.png" alt="Проект 3"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-b.png" alt="Проект 4"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-b.png" alt="Проект 5"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-a.png" alt="Проект 6"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-b.png" alt="Проект 7"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+            <div class="project"><img src="assets/project-a.png" alt="Проект 8"><div class="project-overlay"><img src="assets/eye.png" alt=""></div></div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="contacts" id="contacts">
+            <div class="section-text">
+                <h2>Хотите веб-сайт?</h2>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            </div>
+
+            <form class="contact-form" action="#contacts" method="get">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="email" name="email" placeholder="Ваш e-mail" required>
+                </div>
+                <textarea name="message" placeholder="Сообщение" required></textarea>
+                <button class="button send-button" type="submit">ОТПРАВИТЬ</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>Иванов Иван</h3>
+                <p>(с) 2018. Все права защищены.</p>
+            </div>
+            <div class="socials">
+                <img src="assets/vk.png" width="44" height="40" alt="ВКонтакте">
+                <img src="assets/vk.png" width="44" height="40" alt="ВКонтакте">
+                <img src="assets/vk.png" width="44" height="40" alt="ВКонтакте">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
